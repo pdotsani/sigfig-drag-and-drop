@@ -80,7 +80,7 @@
 			var srcId = e.dataTransfer.getData("text");
 			var srcIMG = document.getElementById(srcId);
 			var tgtIMG = document.getElementById(e.target.id);
-			var tmp = tgtIMG.cloneNode(true);
+			var tmp = tgtIMG.cloneNode();
 
 			srcIMG.parentNode.insertBefore(tmp, srcIMG);
 			tgtIMG.parentNode.insertBefore(srcIMG, tgtIMG);

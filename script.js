@@ -28,7 +28,7 @@ imgUrlArray.forEach((url, idx) => {
 		let srcId = e.dataTransfer.getData("text");
 		let srcIMG = document.getElementById(srcId);
 		let tgtIMG = document.getElementById(e.target.id);
-		let tmp = tgtIMG.cloneNode(true);
+		let tmp = tgtIMG.cloneNode();
 
 		srcIMG.parentNode.insertBefore(tmp, srcIMG);
 		tgtIMG.parentNode.insertBefore(srcIMG, tgtIMG);
