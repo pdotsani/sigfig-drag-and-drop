@@ -1,0 +1,22 @@
+{
+  "name": "sigfig-image-gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dev/index.html",
+  "scripts": {
+    "start": "npm run build; open dist/index.html",
+    "build": "gulp; mkdir dist/pictures; cp pictures/* dist/pictures/.;cp ./index.html ./dist/.; cp ./images.json ./dist/.;"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "gulp": "^3.9.1",
+    "json-loader": "^0.5.4",
+    "webpack": "^1.13.1",
+    "webpack-stream": "^3.2.0"
+  }
+}
