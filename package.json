@@ -4,7 +4,8 @@
   "description": "",
   "main": "dev/index.html",
   "scripts": {
-    "start": "npm run build; open dist/index.html",
+    "start": "open dist/index.html",
+    "buildandstart": "npm run build; open dist/index.html",
     "build": "gulp; mkdir dist/pictures; cp pictures/* dist/pictures/.;cp ./index.html ./dist/.; cp ./images.json ./dist/.;"
   },
   "author": "",
